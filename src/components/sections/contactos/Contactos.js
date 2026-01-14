@@ -1,5 +1,5 @@
 import { ItemContacto } from "../../common/itemContacto/ItemContacto.js";
-
+import { ContactList } from "./db.js";
 
 let Contactos = () =>{
     let sectionContactos = document.createElement("section");
@@ -9,12 +9,11 @@ let Contactos = () =>{
     h2.textContent = "Contactos";
     sectionContactos.appendChild(h2);
 
-    sectionContactos.appendChild(ItemContacto("user.svg" , "Diego Leiva" , "487951331"));
-    sectionContactos.appendChild(ItemContacto("user.svg" , "Diego Leiva" , "487951331"));
-    sectionContactos.appendChild(ItemContacto("user.svg" , "Diego Leiva" , "487951331"));
-    sectionContactos.appendChild(ItemContacto("user.svg" , "Diego Leiva" , "487951331"));
-    sectionContactos.appendChild(ItemContacto("user.svg" , "Diego Leiva" , "487951331"));                    sectionContactos.appendChild(ItemContacto("user.svg" , "Diego Leiva" , "487951331"));
-    sectionContactos.appendChild(ItemContacto("user.svg" , "Diego Leiva" , "487951331"));
+    ContactList.forEach((contact)=> {
+        sectionContactos.appendChild(ItemContacto("user.svg",
+             contact.nombre, contact.telefono));
+    });
+
     return sectionContactos;
 };
 
