@@ -1,7 +1,7 @@
 import { Button } from "./components/common/button/Button.js";
 import { Contactos } from "./components/sections/Contactos/Contactos.js";
 import { NuevoContacto } from "./components/sections/formulario/NuevoContacto.js"; 
-import { viewNewContact } from "./components/layout/nav/NavController.js";
+import { viewContacts , viewNewContact } from "./components/layout/nav/NavController.js";
 
 let app = document.getElementById("app");
  

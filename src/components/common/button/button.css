@@ -1,47 +1,46 @@
-/* Contenedor principal */
-div[id] {
+/* BOTÓN DEL MENÚ */
+.nav-button {
     display: flex;
     align-items: center;
     gap: 14px;
     padding: 14px 18px;
     margin-bottom: 12px;
+
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 14px;
     cursor: pointer;
+
     transition: all 0.3s ease;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
- 
-/* Hover */
-div[id]:hover {
+
+/* HOVER */
+.nav-button:hover {
     transform: translateX(6px);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
- 
-/* Contenedor del icono */
+
+/* ICONO */
 .button-image {
     width: 42px;
     height: 42px;
     background: linear-gradient(135deg, #4f8cff, #8a5cff);
     border-radius: 10px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
- 
-/* Icono */
+
 .button-image img {
     width: 22px;
     height: 22px;
-    filter: brightness(0) invert(1);
+    filter: invert(1);
 }
- 
-/* Texto */
+
+/* TEXTO */
 .button-text {
     font-size: 15px;
     font-weight: 600;
     color: #1f2933;
-    margin: 0;
 }
-
- 

@@ -1,4 +1,4 @@
-import { ContactList } from "../contactos/db.js"; 
+import { ContactList } from "../Contactos/db.js";
 let NuevoContacto = () => {
     let sectionNuevoContacto = document.createElement("section");
     sectionNuevoContacto.className = "nuevo-contacto";
