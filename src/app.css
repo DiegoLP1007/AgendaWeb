@@ -15,15 +15,13 @@
 
 #nav {
     height: 100vh;
-    border: 1px solid #000;
 }
 
 #container {
     height: 100vh;
-    border: 1px solid #000;
 }
 
-/* Contenedor principal */
+
 div[id] {
     display: flex;
     align-items: center;
@@ -41,13 +39,13 @@ div[id] {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
  
-/* Hover */
+
 div[id]:hover {
     transform: translateX(6px);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
  
-/* Contenedor del icono */
+
 .button-image {
     width: 42px;
     height: 42px;
@@ -60,17 +58,26 @@ div[id]:hover {
     justify-content: center;
 }
  
-/* Icono */
+
 .button-image img {
     width: 22px;
     height: 22px;
     filter: brightness(0) invert(1);
 }
  
-/* Texto */
+
 .button-text {
     font-size: 15px;
     font-weight: 600;
     color: #1f2933;
     margin: 0;
 }
+
+/* @media (min-width: 400px){
+    #app{
+        grid-template-columns: 1fr;
+    }
+    #nav{
+        height: auto;
+    }
+}*/
