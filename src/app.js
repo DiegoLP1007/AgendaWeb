@@ -1,7 +1,6 @@
 import { Button } from "./components/common/button/Button.js";
-import { Contactos } from "./components/sections/Contactos/Contactos.js";
-import { NuevoContacto } from "./components/sections/formulario/NuevoContacto.js"; 
-import { viewContacts , viewNewContact } from "./components/layout/nav/NavController.js";
+import { Contactos } from "./components/sections/contactos/Contactos.js";
+import { viewContacts , viewNewContact, viewNewTodo, viewTodoList } from "./components/layout/nav/NavController.js";
 
 let app = document.getElementById("app");
  
@@ -21,10 +20,33 @@ nav.appendChild(Button(
 viewNewContact
 ))
     ;
-nav.appendChild(Button("ToDoList", "todoList", "todo.svg"));
-nav.appendChild(Button("Crear tarea", "plus", "mas.svg"));
+nav.appendChild(Button(
+    "ToDoList",
+    "todoList", 
+    "todo.svg",
+    viewTodoList
+));
+nav.appendChild(Button("Crear tarea",
+    "plus",
+    "mas.svg",
+    viewNewTodo ));
  
 let container = document.getElementById("container");
  
 container.innerHTML = "";
 container.appendChild(Contactos());
+
+//async function tareas(params) {
+//    try {
+//        let data = await fetch("https://jsonplaceholder.typicode.com/posts");
+//        let r = await data.json();
+//        console.log(r);
+
+ //   } catch (error) {
+ //       console.log(error);
+//    }
+///}
+
+//tareas();
+
+console.log("Completado")
