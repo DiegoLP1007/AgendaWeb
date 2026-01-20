@@ -16,7 +16,7 @@ let Contactos = () => {
             contactos[index].nombre = nuevoNombre;
             contactos[index].telefono = nuevoTelefono;
             saveContactsToStorage(contactos);
-            window.location.reload(); 
+            window.location.reload(); // refresca la lista
         };
 
         const onDelete = () => {
